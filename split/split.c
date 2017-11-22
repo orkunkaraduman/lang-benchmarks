@@ -5,7 +5,8 @@
 void main()
 {
 	FILE *fp = fopen("lipsum.txt", "r");
-	for (int i = 0; i < 100000; i++) {
+	int i;
+	for (i = 0; i < 100000; i++) {
 //		char **fields = NULL;
 		char *fields[10240];
 		size_t fields_len = 0;
