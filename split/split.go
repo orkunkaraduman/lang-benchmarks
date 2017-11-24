@@ -12,6 +12,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+
 	for i := 0; i < 1000000; i++ {
 		f.Seek(0, 0)
 		sc := bufio.NewScanner(f)
@@ -24,4 +25,6 @@ func main() {
 			fmt.Printf("%d %s\n", i, fields[i % len(fields)])
 		}
 	}
+
+	f.Close()
 }

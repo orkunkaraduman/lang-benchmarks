@@ -7,6 +7,7 @@
 void main()
 {
 	FILE *fp = fopen("lipsum.txt", "r");
+
 	int i;
 	for (i = 0; i < 1000000; i++) {
 		char **fields = NULL;
@@ -33,5 +34,6 @@ void main()
 		}
 		free(fields);
 	}
+
 	fclose(fp);
 }
