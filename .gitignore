@@ -16,3 +16,4 @@
 *.sublime-workspace
 
 *.py[co]
+__pycache__
