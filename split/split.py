@@ -2,7 +2,7 @@
 
 fo = open('lipsum.txt', 'r')
 
-for i in range(0, 100000):
+for i in range(0, 1000000):
     fo.seek(0, 0)
     for line in fo:
         fields = line.split(' ')

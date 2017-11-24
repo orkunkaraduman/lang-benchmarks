@@ -7,7 +7,7 @@ use v5.14;
 
 open(my $fh, "lipsum.txt") || die "Could not open \n";
 
-for my $i (0..100000-1) {
+for my $i (0..1000000-1) {
 	seek($fh, 0, 0);
 	my @fields;
 	while (my $line = <$fh>) {
